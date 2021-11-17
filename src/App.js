@@ -1,5 +1,18 @@
 import { Theme } from "./theme/Theme";
-import { Container, HeaderTitle, Banner, Title, Text, Main, TitleMain, SubtitleMain, Shoes, Image } from "./appStyles";
+import {
+  Container,
+  HeaderTitle,
+  Banner,
+  Title,
+  Text,
+  Main,
+  TitleMain,
+  SubtitleMain,
+  Shoes,
+  Image,
+  ContainerBanner,
+  Footer,
+} from "./appStyles";
 import { Jordans } from "./Shoes";
 
 export function App() {
@@ -7,10 +20,11 @@ export function App() {
     <Theme>
       <Container>
         <HeaderTitle>JordanShoes</HeaderTitle>
-        <Banner>
+        <ContainerBanner>
+          <Banner />
           <Title>A melhor loja de Jordan</Title>
           <Text>O tênis Jordan é fruto de uma velha e forte parceria entre a Nike e o jogador Michael Jordan.</Text>
-        </Banner>
+        </ContainerBanner>
         <Main>
           <TitleMain>Destaques</TitleMain>
           <SubtitleMain>Frete grátis e chinelo de brinde é aqui, aproveite por tempo limitado. </SubtitleMain>
@@ -20,6 +34,7 @@ export function App() {
             ))}
           </Shoes>
         </Main>
+        <Footer>Todos os direitos reservados.</Footer>
       </Container>
     </Theme>
   );
